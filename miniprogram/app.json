@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "components/content/info/info",
+    "components/content/player/player",
+    "components/content/playlist/player"
+  ],
+  "window": {
+    "backgroundColor": "#20b2aa",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#20b2aa",
+    "navigationBarTitleText": "许嵩的歌",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

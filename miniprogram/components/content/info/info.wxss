@@ -1,0 +1,32 @@
+/*轮播图*/
+swiper,swiper-item>image  {
+  width: 750rpx;
+  height: calc(750rpx * (643/1499) );
+  margin: 0px auto;
+}
+
+
+.type-nav {
+  width: 750rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.type-nav>navigator {
+  flex: 1;
+  margin: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: #e4e4d3;
+  
+
+
+}
+.type-nav>navigator>image {
+  width: 50px;
+  display: block;
+  margin: 5px auto;
+
+}
+

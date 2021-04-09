@@ -1,0 +1,16 @@
+<view class="header-nav" bindtap="navClickEvent">
+    <text class="{{0==currentItem?'active':''}}" id="0">音乐推荐</text>
+    <text class="{{1==currentItem?'active':''}}" id="1">播放器</text>
+    <text class="{{2==currentItem?'active':''}}" id="2">播放列表</text>
+</view>
+
+
+
+<scroll-view scroll-y scroll-with-animation bindscrolltolower="loadMore" bindscroll="scrolling">
+    <Info></Info>
+    <Player></Player>
+    <Playlist></Playlist>
+    
+</scroll-view>
+
+<view class="foot"></view>

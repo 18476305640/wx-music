@@ -1,0 +1,12 @@
+<view class="box">
+  <text>必听单曲</text>
+  <view>
+    <view wx:for="{{contentData}}" >
+      <view>
+        <navigator url="{{item.url}}"><image src="{{item.titleImg}}"/></navigator>
+      </view>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,37 @@
+
+.box {
+  padding: 0px calc(750rpx*(13/320));
+}
+.box>text {
+  color: #c7c7c7;
+  font-size: calc(750rpx*(13/320));
+  line-height: 35px;
+  
+}
+
+
+.box>view {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box>view>view image{
+  width: 210rpx;
+  display: block;
+  height: 230rpx;
+  border-radius: 4px;
+  
+  
+}
+.box>view>view {
+  width: 210rpx;
+  margin: 5rpx;
+
+}
+.box>view>view>text {
+  color: #c7c7c7 ;
+  font-size: calc(750rpx*(13/320));
+
+}
+

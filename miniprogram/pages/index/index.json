@@ -1,0 +1,8 @@
+{
+    
+    "usingComponents": {
+      "Info":"../../components/content/info/info",
+      "Player":"../../components/content/player/player",
+      "Playlist":"../../components/content/playlist/playlist"
+    }
+  }
