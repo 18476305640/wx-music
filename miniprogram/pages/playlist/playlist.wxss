@@ -1,0 +1,21 @@
+.container {
+  width: 750rpx;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+.audio_item {
+  width:655rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #424242;
+  color: #ebf8f8;
+  display: flex;
+  justify-content: space-between;
+  font-size: calc(750rpx * (14/320));
+}
+.current_pay {
+  color: #c05858;
+}

@@ -1,0 +1,13 @@
+<view>
+    <swiper autoplay circular indicator-dots>
+        <swiper-item ><image src="http://zjazn.test.utools.club/images/2C040138058595B275EDC937B1C59F2B.jpg" mode="widthFix" />1</swiper-item>
+        <swiper-item ><image src="http://zjazn.test.utools.club/images/6.JPG" mode="widthFix" />2</swiper-item>
+        <swiper-item ><image src="http://zjazn.test.utools.club/images/8.JPG" mode="widthFix" />3</swiper-item>
+    </swiper>
+    <view class="type-nav">
+        <navigator url="#"><image src="../../images/04.png" mode="widthFix" /><text>专辑分类</text></navigator>
+        <navigator url="#"><image src="../../images/05.png" mode="widthFix"/><text>每日推荐</text></navigator>
+        <navigator url="#"><image src="../../images/06.png" mode="widthFix" /><text>歌曲歌榜</text></navigator>
+    </view>
+    <GoodHear contentData="{{contentData}}"></GoodHear>
+</view>

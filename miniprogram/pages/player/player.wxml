@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="title">
+    <text>{{nextinfo.name}}</text>
+    <text>— {{nextinfo.author}} — </text>
+  </view>
+  <view class="cover">
+      <view class="{{audio_state?'rotate_imge':''}}"><image src="{{ nextinfo.img }}" mode="widthFix"/></view>
+  </view>
+
+
+  <view class="play_state">
+      <text>{{current_audio_time_format}}</text>
+      <view><slider  block-color="#ffffff" block-size="12" backgroundColor="#dadada" max="{{audio_time_length}}" activeColor="#c05858" bindchange="change_time" bindchanging="time_changeing" value="{{ current_audio_time }}"  /></view>
+      <text>{{audio_time_length_format}}</text>
+  </view>
+</view>

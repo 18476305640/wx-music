@@ -1,0 +1,6 @@
+<view class="container">
+    <view wx:for="{{resources}}" class="audio_item" bindtap="change_play_target" data-operation="{{item.id}}">
+       <text>{{item.name}} —— {{item.author}}</text>
+       <text hidden="{{item.id != play_index}}" class="current_pay">正在播放</text>
+    </view>
+</view>

@@ -1,4 +1,3 @@
-
 .box {
   padding: 0px calc(750rpx*(13/320));
 }
@@ -19,7 +18,8 @@
 .box>view>view image{
   width: 210rpx;
   display: block;
-  height: 230rpx;
+  margin: 0px auto;
+  height: 210rpx;
   border-radius: 4px;
   
   

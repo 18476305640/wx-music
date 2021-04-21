@@ -24,15 +24,11 @@ text.active {
 }
 
 scroll-view {
-    position: fixed;
-    top: 33px;
-    bottom: 45px;
+    width: 100%;
+    height: 100%;
     background-color: #17181a;
     
 }
-
-
-
 
 /*页脚样式*/
 .foot {
@@ -43,7 +39,21 @@ scroll-view {
     left: 0px;
     right: 0px;
     bottom: 0px;
-
-
+}
+.IndexView {
+    display: block;
+    position: absolute;
+    top: 30px;
+    bottom: 40px;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background:#17181a;
+    color: #ffffff;
+}
+.IndexView>swiper-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #17181a;
 }
 

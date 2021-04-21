@@ -1,3 +1,4 @@
+var eventBus = require('utils/bus.js');
 //app.js
 App({
   onLaunch: function () {
@@ -13,7 +14,8 @@ App({
         traceUser: true,
       })
     }
-
-    this.globalData = {}
+    this.globalData = {
+      bus: eventBus.eventBus
+    }
   }
 })

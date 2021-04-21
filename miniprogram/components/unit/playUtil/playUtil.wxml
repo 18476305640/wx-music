@@ -1,0 +1,18 @@
+<view class="playcontent">
+    <audio  src="{{resources[currentAudioIndex].resource}}" id="myAudio" bindtimeupdate="playing"  bindplay="funplay"  action="{{action}}" bindended="audio_end"></audio>
+    <view>
+        <view class="songImg" bindtap="to_play_index"><image src="{{resources[currentAudioIndex].img}}"/></view>
+        <view class="songtext">
+          <text>{{resources[currentAudioIndex].name}}</text>
+          <text>{{resources[currentAudioIndex].author}}</text>
+        </view>
+    </view>
+    <view class="controller">
+        <view bindtap="to_playlist_index"><image src="../../../images/01.png" mode="widthFix"/></view>
+        <view>
+            <image bindtap="audioPlay" src="../../../images/02.png" mode="widthFix" hidden="{{isPlay}}"/>
+            <image bindtap="audioPause" src="../../../images/02stop.png" mode="widthFix" hidden="{{!isPlay}}" />
+        </view>
+        <view><image src="../../../images/03.png" bindtap="nextAudio"  mode="widthFix" /></view>
+    </view>
+</view>

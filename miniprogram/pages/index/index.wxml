@@ -1,16 +1,25 @@
-<view class="header-nav" bindtap="navClickEvent">
-    <text class="{{0==currentItem?'active':''}}" id="0">音乐推荐</text>
-    <text class="{{1==currentItem?'active':''}}" id="1">播放器</text>
-    <text class="{{2==currentItem?'active':''}}" id="2">播放列表</text>
+<view>
+    <view class="header-nav" bindtap="navClickEvent">
+        <text class="{{0==currentItem?'active':''}}" id="0">音乐推荐</text>
+        <text class="{{1==currentItem?'active':''}}" id="1">播放器</text>
+        <text class="{{2==currentItem?'active':''}}" id="2">播放列表</text>
+    </view>
+    <swiper class="IndexView" bindchange="item_change" current="{{currentItem}}"> <!--{{currentItem}}-->
+        <swiper-item>
+            <scroll-view scroll-y scroll-with-animation bindscrolltolower="loadMore" bindscroll="scrolling">
+                <Info ></Info>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <Player  nextinfo="{{songdata[next_info.current_play_index]}}"></Player>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y scroll-with-animation bindscrolltolower="loadMore" bindscroll="scrolling">
+                <Playlist resources="{{songdata}}" play_index="{{next_info['current_play_index']}}"></Playlist>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+    <view class="foot">
+        <playUtil resources="{{ songdata }}" plan="loop" bindplay_next="playnext_even" bindplay_ing="playing_even" bindplay="play_even" bindpause="pause_even" ></playUtil>
+    </view>
 </view>
-
-
-
-<scroll-view scroll-y scroll-with-animation bindscrolltolower="loadMore" bindscroll="scrolling">
-    <Info></Info>
-    <Player></Player>
-    <Playlist></Playlist>
-    
-</scroll-view>
-
-<view class="foot"></view>

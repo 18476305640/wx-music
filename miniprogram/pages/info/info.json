@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "GoodHear":"../../components/unit/goodHear/GoodHear"
+  }
+}
